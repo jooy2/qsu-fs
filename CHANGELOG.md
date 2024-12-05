@@ -1,6 +1,6 @@
 # Change Log
 
-## 1.2.0 (2024--)
+## 1.2.0 (2024-12-06)
 
 - **BREAKING CHANGES**: The `fsman` module is now part of the `qsu` utility family. It can now be installed as `qsu-fs`. Modules with old names will be deleted.
 - **BREAKING CHANGES**: The package no longer uses classes, so if you want to import the entire module at once, you must use something like `import * as _ from 'qsu-fs'`. (`_` -> `* as _`)
