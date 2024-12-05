@@ -1,4 +1,4 @@
-# 💾 FsMan
+# 💾 qsu-fs
 
 A file system utility that can be used with **[Node.js](https://nodejs.org)** fs module.
 
@@ -6,19 +6,19 @@ A file system utility that can be used with **[Node.js](https://nodejs.org)** fs
 
 ## Installation
 
-FsMan requires `Node.js 18.x` or higher, and the repository is serviced through **[NPM](https://npmjs.com)**.
+qsu-fs requires `Node.js 18.x` or higher, and the repository is serviced through **[NPM](https://npmjs.com)**.
 
 After configuring the node environment, you can simply run the following command.
 
 ```shell
 # via npm
-$ npm install fsman
+$ npm install qsu-fs
 
 # via yarn
-$ yarn add fsman
+$ yarn add qsu-fs
 
 # via pnpm
-$ pnpm install fsman
+$ pnpm install qsu-fs
 ```
 
 ## How to use

@@ -27,7 +27,7 @@ const IS_WINDOWS_OS = process.platform === 'win32';
 const LONG_PATH =
 	'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\115.0.1901.203\\Trust Protection Lists';
 
-describe('fsman', () => {
+describe('qsu-fs', () => {
 	it('isHiddenFile', async () => {
 		assert.strictEqual(await isHiddenFile('/home/user/Desktop/hello.txt'), false);
 		assert.strictEqual(await isHiddenFile('~/.bash_profile'), true);
