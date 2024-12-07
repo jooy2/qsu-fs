@@ -4,7 +4,7 @@ import { constants, createReadStream } from 'fs';
 import { stat, mkdir, rename, readdir, utimes, rm, open, readFile, access } from 'fs/promises';
 import { createHash } from 'crypto';
 import { Stats } from 'node:fs';
-import type { FileInfo } from './types';
+import type { FileInfo } from './types.js';
 
 export function isHiddenFile(filePath: string, isWindows = false): Promise<boolean> {
 	return new Promise<boolean>((resolve) => {
