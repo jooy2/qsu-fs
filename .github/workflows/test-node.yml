@@ -1,9 +1,11 @@
 name: test-nodejs
 
 on:
+  pull_request:
+    branches: [main]
   # trigger deployment on every push to main branch
   push:
-    branches: [master]
+    branches: [main]
     paths:
       - '**'
       - '!LICENSE'
@@ -40,7 +42,7 @@ jobs:
 
       # cache node_modules
       - name: Cache dependencies
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         id: npm-cache
         with:
           path: |
