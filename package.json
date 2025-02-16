@@ -65,18 +65,18 @@
 		"md5"
 	],
 	"devDependencies": {
-		"@types/node": "^22.10.1",
+		"@types/node": "^22.13.4",
 		"@typescript-eslint/eslint-plugin": "^7.14.1",
 		"@typescript-eslint/parser": "^7.14.1",
 		"eslint": "^8.57.0",
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-import": "^2.29.1",
-		"glob": "^11.0.0",
-		"prettier": "^3.4.2",
+		"glob": "^11.0.1",
+		"prettier": "^3.5.1",
 		"rimraf": "^6.0.1",
 		"terser-glob": "^1.1.0",
 		"tsx": "^4.19.2",
-		"typescript": "^5.7.2"
+		"typescript": "^5.7.3"
 	}
 }
