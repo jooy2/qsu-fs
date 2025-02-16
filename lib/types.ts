@@ -6,7 +6,7 @@ export interface FileInfo {
 	name: string;
 	dirname: string;
 	path: string;
-	ext: string;
+	ext: string | null;
 	created: number;
 	modified: number;
 }

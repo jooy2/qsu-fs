@@ -163,20 +163,20 @@ export function normalizeFile(
 	return filePath.normalize(normalizationForm);
 }
 
-export function getFileExtension(filePath: string, isWindows?: boolean): string {
+export function getFileExtension(filePath: string, isWindows?: boolean): string | null {
 	let strPath: string | undefined = filePath.split(isWindows ? '\\' : '/').pop();
 
 	if (!strPath) {
-		return '';
+		return null;
 	}
 
 	strPath = extname(strPath) || strPath;
 
 	if (strPath.indexOf('.') === -1) {
-		return '';
+		return null;
 	}
 
-	return strPath.split('.')?.pop()?.toLowerCase() || '';
+	return strPath.split('.')?.pop()?.toLowerCase() || null;
 }
 
 export async function getFileInfo(filePath: string): Promise<FileInfo> {

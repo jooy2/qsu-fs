@@ -161,18 +161,20 @@ describe('qsu-fs', () => {
 
 	it('getFileExtension', () => {
 		assert.strictEqual(getFileExtension('test.123/sample.txt'), 'txt');
-		assert.strictEqual(getFileExtension('test.123/sample'), '');
+		assert.strictEqual(getFileExtension('test.123/sample'), null);
 		assert.strictEqual(getFileExtension('test/sample.txt'), 'txt');
 		assert.strictEqual(getFileExtension('test/hello.1/sample.txt'), 'txt');
-		assert.strictEqual(getFileExtension('test/sample'), '');
+		assert.strictEqual(getFileExtension('test/sample'), null);
 		assert.strictEqual(getFileExtension('test.txt.sample'), 'sample');
-		assert.strictEqual(getFileExtension('test'), '');
+		assert.strictEqual(getFileExtension('test'), null);
 		assert.strictEqual(getFileExtension('TEST.FILE.TXT'), 'txt');
 		assert.strictEqual(getFileExtension('test..txt..png'), 'png');
-		assert.strictEqual(getFileExtension('txt', true), '');
+		assert.strictEqual(getFileExtension('txt', true), null);
 		assert.strictEqual(getFileExtension('txt.png', true), 'png');
+		assert.strictEqual(getFileExtension('/home/txt.txt'), 'txt');
+		assert.strictEqual(getFileExtension('/home/txt.abc.png'), 'png');
 		assert.strictEqual(getFileExtension('C:\\test\\txt.png', true), 'png');
-		assert.strictEqual(getFileExtension('C:\\test.hello.sample\\txt', true), '');
+		assert.strictEqual(getFileExtension('C:\\test.hello.sample\\txt', true), null);
 		assert.strictEqual(getFileExtension('C:\\test.hello.sample\\txt.txt', true), 'txt');
 	});
 

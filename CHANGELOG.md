@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.2.2 (2025-02-16)
+
+- `getFileExtension`: Return `null` instead of empty string when no extension detected
+
 ## 1.2.1 (2024-12-07)
 
 - Fix import of type declaration files
