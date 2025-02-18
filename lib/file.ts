@@ -206,7 +206,7 @@ export async function getFileInfo(filePath: string): Promise<FileInfo> {
 	return {
 		success: false,
 		isDirectory: false,
-		ext: '',
+		ext: null,
 		size: 0,
 		sizeHumanized: '0 Bytes',
 		name: 'unknown',
