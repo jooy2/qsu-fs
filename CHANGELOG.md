@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.2.3 (2025-02-27)
+
+- This module has been merged into the `qsu` package and is no longer used. (https://github.com/jooy2/qsu)
+
 ## 1.2.2 (2025-02-16)
 
 - `getFileExtension`: Return `null` instead of empty string when no extension detected

@@ -1,6 +1,6 @@
 {
 	"name": "qsu-fs",
-	"version": "1.2.2",
+	"version": "1.2.3",
 	"description": "A file system utility that can be used with Node.js fs module.",
 	"author": "CDGet <jooy2.contact@gmail.com>",
 	"license": "MIT",
